@@ -37,10 +37,19 @@ cp ${icon_file} "1024x1024.png"
 sips -z 1024 1024 "1024x1024.png"
 
 # Icons for iPhone iPad
+# 68x68
+cp ${icon_file} "68x68@2x.png"
+sips -z 136 136 "68x68@2x.png"
+
+# 76x76
+cp ${icon_file} "76x76@2x.png"
+sips -z 152 152 "76x76@2x.png"
+
+# 83.5x83.5
 cp ${icon_file} "83.5x83.5@2x.png"
 sips -z 167 167 "83.5x83.5@2x.png"
 
-for name in 20 29 40 57 60 76
+for name in 20 29 38 40 57 60 64
 do
 	for scale in 2 3
 	do
